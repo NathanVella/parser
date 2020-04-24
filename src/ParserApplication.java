@@ -1,7 +1,7 @@
-import static helper.SimpleParserHelper.expressionTree;
+import static helper.ParserHelper.expressionTree;
 
-import model.exception.ParseError;
-import model.node.ExpNode;
+import model.ExpNode;
+import exception.ParseError;
 import textio.TextIO;
 
 /**
@@ -22,7 +22,7 @@ import textio.TextIO;
  * expression trees.
  */
 
-public class Parser {
+public class ParserApplication {
 
   public static void main(String[] args) {
     while (true) {

@@ -1,4 +1,4 @@
-package model.exception;
+package exception;
 
 /**
  * An object of type ParseError represents a syntax error found in the user's input.

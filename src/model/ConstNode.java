@@ -1,4 +1,4 @@
-package model.node;
+package model;
 
 /**
  * Represents an expression node that holds a number.

@@ -1,13 +1,13 @@
 package helper;
 
-import model.exception.ParseError;
-import model.node.BinOpNode;
-import model.node.ConstNode;
-import model.node.ExpNode;
-import model.node.UnaryMinusNode;
+import exception.ParseError;
+import model.BinOpNode;
+import model.ConstNode;
+import model.ExpNode;
+import model.UnaryMinusNode;
 import textio.TextIO;
 
-public class SimpleParserHelper {
+public class ParserHelper {
 
   /**
    * Reads an expression from the current line of input and builds an expression tree that represents the expression.

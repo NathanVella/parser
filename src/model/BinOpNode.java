@@ -1,4 +1,4 @@
-package model.node;
+package model;
 
 /**
  * An expression node representing a binary operator.

@@ -1,4 +1,4 @@
-package model.node;
+package model;
 
 /**
  * An expression node to represent a unary minus operator.

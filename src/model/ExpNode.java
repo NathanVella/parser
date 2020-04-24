@@ -1,4 +1,4 @@
-package model.node;
+package model;
 
 /**
  * An abstract class representing any node in an expression tree. The three concrete node classes are concrete subclasses.
