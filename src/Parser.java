@@ -1,23 +1,25 @@
 import static helper.SimpleParserHelper.expressionTree;
 
-import model.node.ExpNode;
 import model.exception.ParseError;
+import model.node.ExpNode;
 import textio.TextIO;
 
 /**
- * This program reads standard expressions typed in by the user. The program constructs an expression tree to represent the expression.  It then
- * prints the value of the tree. It also uses the tree to print out a list of commands that could be used on a stack machine to evaluate the
- * expression. The expressions can use positive real numbers and the binary operators +, -, *, and /. The unary minus operation is supported.
+ * This program reads standard expressions typed in by the user. The program constructs an expression tree to represent the
+ * expression.  It then prints the value of the tree. It also uses the tree to print out a list of commands that could be
+ * used on a stack machine to evaluate the expression. The expressions can use positive real numbers and the binary operators
+ * +, -, *, and /. The unary minus operation is supported.
  *
  * The expressions are defined by the BNF rules:
  *   <expression>  ::=  [ "-" ] <term> [ [ "+" | "-" ] <term> ]...
  *   <term>  ::=  <factor> [ [ "*" | "/" ] <factor> ]...
  *   <factor>  ::=  <number>  |  "(" <expression> ")"
  *
- * A number must begin with a digit (i.e., not a decimal point). A line of input must contain exactly one such expression.
- * If extra data is found on a line after an expression has been read, it is considered an error.
+ * A number must begin with a digit (i.e., not a decimal point). A line of input must contain exactly one such expression. If
+ * extra data is found on a line after an expression has been read, it is considered an error.
  *
- * In addition to the main program class, SimpleParser, this program defines a set of four nested classes for implementing expression trees.
+ * In addition to the main program class, SimpleParser, this program defines a set of four nested classes for implementing
+ * expression trees.
  */
 
 public class Parser {
@@ -27,7 +29,9 @@ public class Parser {
       System.out.println("Enter an expression, or press return to end.");
       System.out.print("?  ");
       TextIO.skipBlanks();
-      if (TextIO.peek() == '\n') break;
+      if (TextIO.peek() == '\n') {
+        break;
+      }
       try {
         ExpNode exp = expressionTree();
         TextIO.skipBlanks();
